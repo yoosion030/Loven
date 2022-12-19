@@ -216,6 +216,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/plugin-proposal-do-expressions@npm:^7.18.6":
+  version: 7.18.6
+  resolution: "@babel/plugin-proposal-do-expressions@npm:7.18.6"
+  dependencies:
+    "@babel/helper-plugin-utils": ^7.18.6
+    "@babel/plugin-syntax-do-expressions": ^7.18.6
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 9c28e54aea275aba2205bdcd23cb8696142f7085b5d002a4544fd5508716adf6250eec259eec485bf514994071dff069008f78261a9442a23e018a0b0a5e4b31
+  languageName: node
+  linkType: hard
+
+"@babel/plugin-syntax-do-expressions@npm:^7.18.6":
+  version: 7.18.6
+  resolution: "@babel/plugin-syntax-do-expressions@npm:7.18.6"
+  dependencies:
+    "@babel/helper-plugin-utils": ^7.18.6
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: e24d51eae1c38e7a0eef1c6bad078135f33f95d38d032cfc75668921d59603ee483999cfe4b145e2aac8cf20d00f64fa3f96f295fa364e0ce81a98c5e6b1a680
+  languageName: node
+  linkType: hard
+
 "@babel/plugin-syntax-jsx@npm:^7.17.12, @babel/plugin-syntax-jsx@npm:^7.18.6":
   version: 7.18.6
   resolution: "@babel/plugin-syntax-jsx@npm:7.18.6"
@@ -638,6 +661,13 @@ __metadata:
   dependencies:
     glob: 7.1.7
   checksum: 157b1126f016a0090b62f590d9c331c58221c4efaf3453c294a0d26e75497704617549480e9bba3ddaf278a355359133dd239c3960f684f2abe575553ec59a96
+  languageName: node
+  linkType: hard
+
+"@next/font@npm:^13.0.7":
+  version: 13.0.7
+  resolution: "@next/font@npm:13.0.7"
+  checksum: 88324e483561ed1372b97d434b98cff3c3adfeafc4217b45ff96f429c42ea4c6eebb089b34d8ef353aaf6413aa5f6d918a2ea83701ad129d2cc6f6751184d82a
   languageName: node
   linkType: hard
 
@@ -3162,11 +3192,13 @@ __metadata:
   resolution: "template@workspace:."
   dependencies:
     "@babel/core": ^7.19.6
+    "@babel/plugin-proposal-do-expressions": ^7.18.6
     "@babel/preset-react": ^7.18.6
     "@emotion/babel-plugin": ^11.10.2
     "@emotion/babel-preset-css-prop": ^11.10.0
     "@emotion/react": ^11.10.4
     "@emotion/styled": ^11.10.4
+    "@next/font": ^13.0.7
     "@types/babel__core": ^7
     "@types/node": 18.11.2
     "@types/react": 18.0.21
