@@ -1,4 +1,5 @@
 import type { NextPage } from 'next';
+/** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 
 const Home: NextPage = () => {
