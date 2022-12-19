@@ -5,15 +5,26 @@ export function GlobalStyle() {
   return (
     <Global
       styles={css`
+        @font-face {
+          font-family: 'Archivo Black';
+          src: url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+          unicode-range: U+0041-005A, U+0061-007A;
+        }
+
+        @font-face {
+          font-family: 'Noto Sans KR';
+          src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+          unicode-range: U+AC00-D7A3;
+        }
+
         ${emotionReset}
 
         body {
-          font-family: 'Noto Sans KR', sans-serif;
+          font-family: 'Archivo Black', 'Noto Sans KR', sans-serif;
         }
 
         a {
           text-decoration: none;
-          color: #ffffff;
         }
 
         body::-webkit-scrollbar {
@@ -21,9 +32,7 @@ export function GlobalStyle() {
         }
 
         body::-webkit-scrollbar-thumb {
-          background-color: #ffffff;
           border-radius: 10px;
-          border: 4px solid #0f0921;
           height: 56px;
           background-clip: content-box;
         }
