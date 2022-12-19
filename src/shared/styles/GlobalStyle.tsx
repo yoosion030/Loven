@@ -5,22 +5,46 @@ export function GlobalStyle() {
   return (
     <Global
       styles={css`
+        ${emotionReset}
+        /* noto-sans-kr-regular - latin */
+        @font-face {
+          font-family: 'Noto Sans KR';
+          src: url('../fonts/noto-sans-kr-v27-latin-regular.eot'); /* IE9 Compat Modes */
+          src: local(''),
+            url('../fonts/noto-sans-kr-v27-latin-regular.eot?#iefix')
+              format('embedded-opentype'),
+            /* IE6-IE8 */ url('../fonts/noto-sans-kr-v27-latin-regular.woff2')
+              format('woff2'),
+            /* Super Modern Browsers */
+              url('../fonts/noto-sans-kr-v27-latin-regular.woff') format('woff'),
+            /* Modern Browsers */
+              url('../fonts/noto-sans-kr-v27-latin-regular.ttf')
+              format('truetype');
+          /* Safari, Android, iOS */
+        }
+
+        /* archivo-black-regular - latin */
         @font-face {
           font-family: 'Archivo Black';
-          src: url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+          src: url('../fonts/archivo-black-v17-latin-regular.eot'); /* IE9 Compat Modes */
+          src: local(''),
+            url('../fonts/archivo-black-v17-latin-regular.eot?#iefix')
+              format('embedded-opentype'),
+            /* IE6-IE8 */ url('../fonts/archivo-black-v17-latin-regular.woff2')
+              format('woff2'),
+            /* Super Modern Browsers */
+              url('../fonts/archivo-black-v17-latin-regular.woff')
+              format('woff'),
+            /* Modern Browsers */
+              url('../fonts/archivo-black-v17-latin-regular.ttf')
+              format('truetype');
+          /* Safari, Android, iOS */
           unicode-range: U+0041-005A, U+0061-007A;
         }
 
-        @font-face {
-          font-family: 'Noto Sans KR';
-          src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
-          unicode-range: U+AC00-D7A3;
-        }
-
-        ${emotionReset}
-
         body {
           font-family: 'Archivo Black', 'Noto Sans KR', sans-serif;
+          font-size: 16px;
         }
 
         a {
@@ -48,6 +72,7 @@ export function GlobalStyle() {
           -moz-osx-font-smoothing: grayscale;
           -webkit-font-smoothing: antialiased;
           font-smoothing: antialiased;
+          font-family: inherit;
         }
 
         button,
