@@ -32,8 +32,8 @@ const Logo = () => (
     </g>
     <g filter="url(#filter4_d_1_130)">
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M62.2758 33.706C61.9196 31.4676 60.1517 29.6997 57.9133 29.3435C57.8539 29.0212 57.8228 28.6889 57.8228 28.3494C57.8228 25.3411 60.2615 22.9023 63.2699 22.9023C66.2782 22.9023 68.7169 25.3411 68.7169 28.3494C68.7169 31.3577 66.2782 33.7965 63.2699 33.7965C62.9303 33.7965 62.5981 33.7654 62.2758 33.706ZM62.2985 35.2145C62.6159 35.259 62.9402 35.282 63.2699 35.282C67.0986 35.282 70.2025 32.1782 70.2025 28.3494C70.2025 24.5206 67.0986 21.4168 63.2699 21.4168C59.4411 21.4168 56.3372 24.5206 56.3372 28.3494C56.3372 28.6791 56.3603 29.0034 56.4048 29.3208C53.8179 29.6522 51.8187 31.8623 51.8187 34.5392C51.8187 37.445 54.1743 39.8006 57.08 39.8006C59.757 39.8006 61.967 37.8014 62.2985 35.2145ZM57.08 18.1362C48.0209 18.1362 40.6769 25.4801 40.6769 34.5392C40.6769 43.5984 48.0209 50.9423 57.08 50.9423C66.1392 50.9423 73.4831 43.5984 73.4831 34.5392C73.4831 25.4801 66.1392 18.1362 57.08 18.1362Z"
         fill="black"
       />
@@ -47,9 +47,9 @@ const Logo = () => (
         width="43.32"
         height="40.912"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -82,9 +82,9 @@ const Logo = () => (
         width="44.216"
         height="39.568"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -117,9 +117,9 @@ const Logo = () => (
         width="40.688"
         height="40.24"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -152,9 +152,9 @@ const Logo = () => (
         width="42.144"
         height="48.528"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -187,9 +187,9 @@ const Logo = () => (
         width="42.8062"
         height="42.8062"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
