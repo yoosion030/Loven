@@ -47,3 +47,16 @@ export const ButtonWrapper = styled.div`
   width: 500px;
   margin: 0 auto;
 `;
+
+export const PrizeWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #0000000e;
+  z-index: 7;
+`;
