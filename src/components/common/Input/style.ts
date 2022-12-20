@@ -3,7 +3,6 @@ import styled from '@emotion/styled';
 export const Label = styled.p`
   margin-bottom: 20px;
   font-weight: bold;
-  margin-left: 27px;
 `;
 
 export const Input = styled.input`
