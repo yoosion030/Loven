@@ -1,12 +1,15 @@
 import type { AppProps } from 'next/app';
 import { GlobalStyle } from 'shared/styles/GlobalStyle';
-import {} from '@next/font/local';
+import { Logo, Layout } from 'components';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <main>
       <GlobalStyle />
-      <Component {...pageProps} />
+      <Logo />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </main>
   );
 }

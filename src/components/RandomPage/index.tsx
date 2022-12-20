@@ -1,5 +1,7 @@
+import * as S from './style';
+
 const RandomPage = () => {
-  return <div></div>;
+  return <S.RandomForm>asdfas</S.RandomForm>;
 };
 
 export default RandomPage;

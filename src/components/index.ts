@@ -4,6 +4,7 @@ export { default as DirectCell } from './cells/DirectCell';
 export { default as RandomCell } from './cells/RandomCell';
 export { default as TitleCell } from './cells/TitleCell';
 export { default as Logo } from './common/Logo';
+export { default as Layout } from './common/Layout';
 
 // Pages
 export { default as MainPage } from './MainPage';
