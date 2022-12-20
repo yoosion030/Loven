@@ -7,10 +7,10 @@ interface TextareaProps {
 }
 const Textarea: React.FC<TextareaProps> = ({ label, register }) => {
   return (
-    <>
+    <S.TextareaSection>
       <S.Label>{label}</S.Label>
       <S.Textarea {...register} placeholder="120자 이내 내용을 입력해주세요." />
-    </>
+    </S.TextareaSection>
   );
 };
 

@@ -24,12 +24,23 @@ export const ConferrerSection = styled.div`
 export const PrizeCell = styled(Cell)`
   display: flex;
   flex-direction: column;
+  gap: 30px;
 `;
 
 export const ButtonCell = styled(Cell)`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
   padding: 40px 0;
   text-align: center;
   grid-column: 1 / span 2;
+`;
+
+export const CheckboxSection = styled.label`
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 `;
 
 export const ButtonWrapper = styled.div`

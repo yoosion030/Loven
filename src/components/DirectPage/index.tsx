@@ -48,7 +48,7 @@ const DirectPage = () => {
         />
       </S.PrizeCell>
       <S.ButtonCell>
-        <label htmlFor="secret">
+        <S.CheckboxSection htmlFor="secret">
           <p>상장 내용을 게시판에 공유할게요.</p>
           <CheckBox
             id="secret"
@@ -56,7 +56,7 @@ const DirectPage = () => {
             register={register('secret')}
             type="checkbox"
           />
-        </label>
+        </S.CheckboxSection>
         <S.ButtonWrapper>
           <SubmitButton />
         </S.ButtonWrapper>

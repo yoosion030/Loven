@@ -1,5 +1,11 @@
 import styled from '@emotion/styled';
 
+export const TextareaSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+`;
+
 export const Label = styled.p`
   margin-bottom: 20px;
   font-weight: bold;
