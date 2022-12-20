@@ -10,6 +10,8 @@ export { default as CheckBox } from './common/CheckBox';
 export { default as SubmitButton } from './common/SubmitButton';
 export { default as Check } from './Check';
 export { default as Textarea } from './Textarea';
+export { default as Preview } from './Preview';
+export { default as Prize } from './Prize';
 
 // Pages
 export { default as MainPage } from './MainPage';
