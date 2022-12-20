@@ -3,13 +3,13 @@ import styled from '@emotion/styled';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 3rem 12.5rem 4.625rem;
+  padding: 2rem 12.5rem 4rem;
   height: 100vh;
 `;
 
 export const LogoWrapper = styled.div`
   text-align: center;
-  margin-bottom: 3em;
+  margin-bottom: 2rem;
 `;
 
 export const Grid = styled.div`
@@ -26,6 +26,17 @@ export const Grid = styled.div`
   }
 `;
 
+export const TitleBox = styled.div`
+  grid-column: 1 / span 3;
+  padding: 6.25rem 5rem;
+`;
+
+export const Title = styled.h1`
+  font-weight: 400;
+  font-size: 4.375rem;
+  line-height: 5rem;
+`;
+
 export const BoxTitle = styled.h1`
   font-weight: 400;
   font-size: 3.125rem;
@@ -34,10 +45,6 @@ export const BoxTitle = styled.h1`
 
 export const BoardTitle = styled.h1`
   font-size: 5rem;
-`;
-
-export const TitleBox = styled.div`
-  grid-column: 1 / span 3;
 `;
 
 export const Desc = styled.p`
@@ -51,7 +58,7 @@ export const Desc = styled.p`
 export const Box = styled.div`
   cursor: pointer;
   position: relative;
-  gap: 30px;
+  gap: 1.875rem;
   padding: 4.688em 5.313em;
   &:hover {
     color: #ffffff;
@@ -64,14 +71,14 @@ export const Box = styled.div`
 `;
 
 export const Count = styled.h2`
-  margin-top: 30px;
+  margin-top: 1.875rem;
   text-align: right;
-  font-size: 90px;
+  font-size: 5.625rem;
 `;
 
 export const Participant = styled.p`
-  width: 120px;
-  font-size: 12px;
+  width: 7.5rem;
+  font-size: 0.75rem;
   text-align: center;
   margin-left: auto;
 `;
@@ -79,7 +86,7 @@ export const Participant = styled.p`
 export const RandomBox = styled(Box)`
   svg {
     position: absolute;
-    left: 20px;
+    left: 1.25rem;
     bottom: 0;
   }
 `;
@@ -88,7 +95,7 @@ export const DirectBox = styled(Box)`
   svg {
     position: absolute;
     left: 0;
-    bottom: 20px;
+    bottom: 1.25rem;
   }
 `;
 

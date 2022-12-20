@@ -8,7 +8,14 @@ const MainPage = () => {
         <I.Logo />
       </S.LogoWrapper>
       <S.Grid>
-        <S.TitleBox>1</S.TitleBox>
+        <S.TitleBox>
+          <S.Title>
+            It is innovation <br />
+            that can be <br />
+            customized for listing.
+          </S.Title>
+          <S.Desc>세상에 없던 특별한 상장을 만듭니다.</S.Desc>
+        </S.TitleBox>
         <S.RandomBox>
           <div>
             <S.BoxTitle>Random</S.BoxTitle>
@@ -24,7 +31,7 @@ const MainPage = () => {
         <S.DirectBox>
           <div>
             <S.BoxTitle>Direct</S.BoxTitle>
-            <S.Desc>친구에게 직접 주고싶은 상이 있다면</S.Desc>
+            <S.Desc>친구에게 직접 주고싶은 상이 있다면.</S.Desc>
           </div>
           <div>
             <S.Count>17</S.Count>
@@ -38,7 +45,7 @@ const MainPage = () => {
             <S.BoardTitle>
               Bulletin <br /> board
             </S.BoardTitle>
-            <S.Desc>상장, 모두가 받을 수 있도록</S.Desc>
+            <S.Desc>상장, 모두가 받을 수 있도록.</S.Desc>
           </div>
           <I.BoardIcon />
         </S.BoardBox>
