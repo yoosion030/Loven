@@ -19,19 +19,19 @@ const RandomPage = () => {
   return (
     <S.RandomForm>
       <S.Form onSubmit={handleSubmit(onValid, inValid)}>
-        <div>
+        <S.ConferrerSection>
           <Input
             label="수여자"
             register={register('conferrer', { required: true })}
             placeholder="주는 사람의 이름을 입력해주세요."
           />
-        </div>
 
-        <Input
-          label="소속"
-          register={register('conferrer_group', { required: true })}
-          placeholder="수여자 소속을 입력해주세요."
-        />
+          <Input
+            label="소속"
+            register={register('conferrer_group', { required: true })}
+            placeholder="수여자 소속을 입력해주세요."
+          />
+        </S.ConferrerSection>
 
         <div>
           <Input

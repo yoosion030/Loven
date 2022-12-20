@@ -24,5 +24,10 @@ export const Form = styled.form`
   width: 500px;
   height: 100%;
   margin: 0 auto;
-  /* background-color: red; */
+`;
+
+export const ConferrerSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 `;
