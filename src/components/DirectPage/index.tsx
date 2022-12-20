@@ -1,4 +1,4 @@
-import { SubmitButton, Input, CheckBox } from 'components';
+import { SubmitButton, Input, CheckBox, Textarea } from 'components';
 import { DirectType } from 'types/Direct';
 import * as S from './style';
 import { useForm } from 'react-hook-form';
@@ -8,6 +8,7 @@ const DirectPage = () => {
   const { handleSubmit, register } = useForm<DirectType>();
   const onValid = (data: DirectType) => {
     console.log(data);
+    console.log('직접 입력 상장 생성 api ');
   };
 
   const inValid = (errors: FieldErrors) => {
@@ -40,6 +41,10 @@ const DirectPage = () => {
           label="상 이름"
           register={register('prize', { required: true })}
           placeholder="상 이름을 입력해주세요."
+        />
+        <Textarea
+          label="내용"
+          register={register('content', { required: true })}
         />
       </S.PrizeCell>
       <S.ButtonCell>

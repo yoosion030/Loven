@@ -21,7 +21,10 @@ export const ConferrerSection = styled.div`
   gap: 30px;
 `;
 
-export const PrizeCell = styled(Cell)``;
+export const PrizeCell = styled(Cell)`
+  display: flex;
+  flex-direction: column;
+`;
 
 export const ButtonCell = styled(Cell)`
   padding: 40px 0;
