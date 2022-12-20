@@ -1,8 +1,19 @@
 import styled from '@emotion/styled';
 
 export const TitleBox = styled.div`
+  display: flex;
   grid-column: 1 / span 3;
-  padding: 6.25rem 5rem;
+  padding: 6.25rem 5rem 0;
+  justify-content: space-between;
+  img {
+    margin-top: auto;
+  }
+`;
+
+export const TitleSection = styled.div`
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
 `;
 
 export const Title = styled.h1`
