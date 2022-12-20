@@ -10,12 +10,12 @@ const Check: React.FC<CheckProps> = ({ register }) => {
   return (
     <S.Check>
       <S.Label htmlFor="student">
-        <RadioButton register={register} id="student" name="kind" />
+        <RadioButton register={register} id="student" name="winner_kind" />
         학생
       </S.Label>
 
       <S.Label htmlFor="teacher">
-        <RadioButton register={register} id="teacher" name="kind" />
+        <RadioButton register={register} id="teacher" name="winner_kind" />
         선생님
       </S.Label>
     </S.Check>
