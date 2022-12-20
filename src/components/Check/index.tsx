@@ -1,4 +1,4 @@
-import { RadioButton } from 'components';
+import { CheckBox } from 'components';
 import * as S from './style';
 import type { UseFormRegisterReturn } from 'react-hook-form';
 
@@ -10,12 +10,22 @@ const Check: React.FC<CheckProps> = ({ register }) => {
   return (
     <S.Check>
       <S.Label htmlFor="student">
-        <RadioButton register={register} id="student" name="winner_kind" />
+        <CheckBox
+          register={register}
+          id="student"
+          name="winner_kind"
+          type="radio"
+        />
         학생
       </S.Label>
 
       <S.Label htmlFor="teacher">
-        <RadioButton register={register} id="teacher" name="winner_kind" />
+        <CheckBox
+          register={register}
+          id="teacher"
+          name="winner_kind"
+          type="radio"
+        />
         선생님
       </S.Label>
     </S.Check>
