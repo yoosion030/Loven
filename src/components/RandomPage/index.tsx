@@ -8,10 +8,13 @@ import { RandomType } from 'types/Random';
 const RandomPage = () => {
   const onValid = (data: RandomType) => {
     console.log(data);
+    console.log('random 상장 생성 api 전송');
   };
+
   const inValid = (errors: FieldErrors) => {
     console.log(errors);
   };
+
   const { register, handleSubmit } = useForm<RandomType>();
   return (
     <S.RandomForm>
@@ -36,7 +39,7 @@ const RandomPage = () => {
             register={register('winner', { required: true })}
             placeholder="받는 사람의 이름을 입력해주세요."
           />
-          <Check />
+          <Check register={register('winner_kind', { required: true })} />
         </div>
         <SubmitButton />
       </S.Form>
