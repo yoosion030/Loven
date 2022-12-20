@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const TitleBox = styled.div`
+export const TitleCell = styled.div`
   display: flex;
   grid-column: 1 / span 3;
   padding: 6.25rem 5rem 0;

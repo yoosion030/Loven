@@ -1,4 +1,4 @@
-import { Logo, BoardCell, DirectCell, RandomCell, TitleCell } from 'components';
+import { BoardCell, DirectCell, RandomCell, TitleCell } from 'components';
 import { CountProps } from 'types/Count';
 import * as S from './style';
 

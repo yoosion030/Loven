@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
-import { Box } from 'shared/styles/cell';
+import { Cell } from 'shared/styles/main/cell';
 
-export const RandomBox = styled(Box)`
+export const RandomCell = styled(Cell)`
   svg {
     position: absolute;
     left: 1.25rem;

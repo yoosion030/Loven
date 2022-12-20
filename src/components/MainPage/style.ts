@@ -1,13 +1,7 @@
 import styled from '@emotion/styled';
 
-export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin: 0 12.5rem;
-  background-color: #000000;
-`;
-
 export const Grid = styled.div`
+  height: 100%;
   flex: 1;
   display: grid;
   grid-gap: 2px;

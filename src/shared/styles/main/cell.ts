@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const Box = styled.div`
+export const Cell = styled.div`
   cursor: pointer;
   position: relative;
   gap: 1.875rem;
@@ -15,7 +15,7 @@ export const Box = styled.div`
   }
 `;
 
-export const BoxTitle = styled.h1`
+export const CellTitle = styled.h1`
   font-weight: 400;
   font-size: 3.125rem;
   line-height: 3.375rem;
@@ -36,8 +36,7 @@ export const Count = styled.h2`
 `;
 
 export const Participant = styled.p`
-  width: 7.5rem;
-  font-size: 0.75rem;
-  text-align: center;
+  width: 120px;
   margin-left: auto;
+  text-align: center;
 `;

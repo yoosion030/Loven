@@ -4,7 +4,7 @@ export const BoardTitle = styled.h1`
   font-size: 5rem;
 `;
 
-export const BoardBox = styled.div`
+export const BoardCell = styled.div`
   cursor: pointer;
   position: relative;
   display: flex;
