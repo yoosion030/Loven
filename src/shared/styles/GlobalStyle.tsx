@@ -76,7 +76,8 @@ export function GlobalStyle() {
         }
 
         button,
-        input {
+        input,
+        textarea {
           font-family: 'Noto Sans KR', sans-serif;
         }
       `}
