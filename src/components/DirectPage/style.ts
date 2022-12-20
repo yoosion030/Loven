@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { Cell } from 'shared/styles/direct/cell';
 
 export const Grid = styled.form`
   height: 100%;
@@ -8,18 +9,10 @@ export const Grid = styled.form`
   grid-template-columns: 1fr 1fr;
 `;
 
-export const PersonCell = styled.div`
-  background-color: #ffffff;
-  border-radius: 20px;
-`;
+export const PersonCell = styled(Cell)``;
 
-export const PrizeCell = styled.div`
-  background-color: #ffffff;
+export const PrizeCell = styled(Cell)``;
 
-  border-radius: 20px;
-`;
-
-export const ButtonCell = styled.div`
-  background-color: #ffffff;
-  border-radius: 20px;
+export const ButtonCell = styled(Cell)`
+  grid-column: 1 / span 2;
 `;
