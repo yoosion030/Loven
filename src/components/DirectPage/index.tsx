@@ -1,4 +1,4 @@
-import { SubmitButton, Input } from 'components';
+import { SubmitButton, Input, CheckBox } from 'components';
 import { DirectType } from 'types/Direct';
 import * as S from './style';
 import { useForm } from 'react-hook-form';
@@ -17,16 +17,18 @@ const DirectPage = () => {
   return (
     <S.Grid onSubmit={handleSubmit(onValid, inValid)}>
       <S.PersonCell>
-        <Input
-          label="수여자"
-          register={register('conferrer', { required: true })}
-          placeholder="주는 사람의 이름을 입력해주세요."
-        />
-        <Input
-          label="소속"
-          register={register('conferrer_group', { required: true })}
-          placeholder="소속을 입력해주세요."
-        />
+        <S.ConferrerSection>
+          <Input
+            label="수여자"
+            register={register('conferrer', { required: true })}
+            placeholder="주는 사람의 이름을 입력해주세요."
+          />
+          <Input
+            label="소속"
+            register={register('conferrer_group', { required: true })}
+            placeholder="소속을 입력해주세요."
+          />
+        </S.ConferrerSection>
         <Input
           label="수상자"
           register={register('winner', { required: true })}
@@ -41,7 +43,18 @@ const DirectPage = () => {
         />
       </S.PrizeCell>
       <S.ButtonCell>
-        <SubmitButton />
+        <label htmlFor="secret">
+          <p>상장 내용을 게시판에 공유할게요.</p>
+          <CheckBox
+            id="secret"
+            name="secret"
+            register={register('secret')}
+            type="checkbox"
+          />
+        </label>
+        <S.ButtonWrapper>
+          <SubmitButton />
+        </S.ButtonWrapper>
       </S.ButtonCell>
     </S.Grid>
   );
