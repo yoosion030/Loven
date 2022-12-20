@@ -6,7 +6,9 @@ export { default as TitleCell } from './cells/TitleCell';
 export { default as Logo } from './common/Logo';
 export { default as Layout } from './common/Layout';
 export { default as Input } from './common/Input';
+export { default as RadioButton } from './common/RadioButton';
 export { default as SubmitButton } from './common/SubmitButton';
+export { default as Check } from './Check';
 
 // Pages
 export { default as MainPage } from './MainPage';

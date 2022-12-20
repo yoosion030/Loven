@@ -1,4 +1,4 @@
-import { Input, SubmitButton } from 'components';
+import { Input, SubmitButton, Check } from 'components';
 import * as S from './style';
 import * as I from 'assets/svg';
 import { useForm } from 'react-hook-form';
@@ -16,17 +16,28 @@ const RandomPage = () => {
   return (
     <S.RandomForm>
       <S.Form onSubmit={handleSubmit(onValid, inValid)}>
-        <Input
-          label="수여자"
-          register={register('conferrer', { required: true })}
-          placeholder="주는 사람의 이름을 입력해주세요."
-        />
+        <div>
+          <Input
+            label="수여자"
+            register={register('conferrer', { required: true })}
+            placeholder="주는 사람의 이름을 입력해주세요."
+          />
+        </div>
 
         <Input
-          label="수상자"
-          register={register('winner', { required: true })}
-          placeholder="받는 사람의 이름을 입력해주세요."
+          label="소속"
+          register={register('conferrer_group', { required: true })}
+          placeholder="수여자 소속을 입력해주세요."
         />
+
+        <div>
+          <Input
+            label="수상자"
+            register={register('winner', { required: true })}
+            placeholder="받는 사람의 이름을 입력해주세요."
+          />
+          <Check />
+        </div>
         <SubmitButton />
       </S.Form>
       <I.RandomBackground />
