@@ -17,7 +17,9 @@ const Prize: React.FC<PrizeProps> = ({
 }) => {
   return (
     <S.Prize onClick={e => e.stopPropagation()}>
-      상장{prize}
+      <S.Title>상장</S.Title>
+      asdfadsf
+      {prize}
       {content}
       {conferrer}
       {conferrer_group}
