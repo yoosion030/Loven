@@ -1,8 +1,8 @@
 import * as S from './style';
 import * as C from 'shared/styles/main/cell';
-import * as I from 'assets/svg';
+
 import Image from 'next/image';
-import business from 'assets/png/business.png';
+import business from '/public/business.png';
 
 const TitleCell = () => {
   return (
