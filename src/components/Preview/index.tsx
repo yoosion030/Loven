@@ -9,7 +9,7 @@ interface MouseProps {
 const Preview: React.FC<MouseProps> = ({ onClick }) => {
   return (
     <S.Preview onClick={onClick}>
-      <S.PreviewDesc className="desc">상장미리보기</S.PreviewDesc>
+      <S.PreviewDesc className="desc">상장 미리보기</S.PreviewDesc>
       <S.Icon className="icon">
         <I.PreviewIcon />
       </S.Icon>

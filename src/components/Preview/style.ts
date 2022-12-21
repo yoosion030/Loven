@@ -9,33 +9,29 @@ export const Preview = styled.div`
   display: flex;
   cursor: pointer;
 
-  @keyframes slide {
-    0% {
-      transform: translateX(0px);
-    }
+  @keyframes rotate {
     100% {
-      transform: translateX(-150px);
+      transform: rotate(360deg);
     }
   }
 
   &:hover {
-    .desc {
-      display: block;
+    .icon {
+      animation: rotate 1s linear infinite;
     }
   }
 `;
 
 export const PreviewDesc = styled.div`
-  display: none;
-  width: 170px;
+  width: 150px;
   height: 100%;
   background-color: #ffffff;
   border-bottom-left-radius: 50px;
   border-top-left-radius: 50px;
   box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.25);
   line-height: 50px;
-  text-align: center;
   transform: translateX(30px);
+  padding-left: 20px;
 `;
 
 export const Icon = styled.div`
