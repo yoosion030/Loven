@@ -3,6 +3,8 @@ export { default as BoardCell } from './cells/BoardCell';
 export { default as DirectCell } from './cells/DirectCell';
 export { default as RandomCell } from './cells/RandomCell';
 export { default as TitleCell } from './cells/TitleCell';
+export { default as BoardTitleCell } from './cells/BoardTitleCell';
+export { default as PrizeCell } from './cells/PrizeCell';
 export { default as Logo } from './common/Logo';
 export { default as Layout } from './common/Layout';
 export { default as Input } from './common/Input';
