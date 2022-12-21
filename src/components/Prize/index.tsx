@@ -15,15 +15,26 @@ const Prize: React.FC<PrizeProps> = ({
   winner,
   prize,
 }) => {
+  const date = new Date();
+
   return (
     <S.Prize onClick={e => e.stopPropagation()}>
-      <S.Title>상장</S.Title>
-      asdfadsf
-      {prize}
-      {content}
-      {conferrer}
-      {conferrer_group}
-      {winner}
+      <S.Title>
+        <p>상</p>장
+      </S.Title>
+
+      <S.WinnerSection>
+        <p>{prize}</p>
+        <p>{winner}</p>
+      </S.WinnerSection>
+      <S.ContentSection>{content}</S.ContentSection>
+      <S.DateSection>
+        {date.getFullYear()}년 {date.getMonth() + 1}월 {date.getDate()}일
+      </S.DateSection>
+      <S.ConferrerSection>
+        <p>{conferrer_group}</p>
+        <p>{conferrer}</p>
+      </S.ConferrerSection>
     </S.Prize>
   );
 };
