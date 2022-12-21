@@ -36,7 +36,7 @@ export const Count = styled.h2`
 `;
 
 export const Participant = styled.p`
-  width: 120px;
+  width: 7.5rem;
   margin-left: auto;
   text-align: center;
 `;

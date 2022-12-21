@@ -7,7 +7,7 @@ export const TextareaSection = styled.div`
 `;
 
 export const Label = styled.p`
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   font-weight: bold;
 `;
 
@@ -15,11 +15,9 @@ export const Textarea = styled.textarea`
   width: 100%;
   resize: none;
   flex: 1;
-  left: 1098px;
-  top: 434.06px;
   background: #f1f1f1;
-  border-radius: 20px;
-  padding: 30px;
+  border-radius: 1.25rem;
+  padding: 1.875rem;
   border: none;
   outline: none;
 

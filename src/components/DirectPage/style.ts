@@ -18,21 +18,21 @@ export const PersonCell = styled(Cell)`
 export const ConferrerSection = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 1.875rem;
 `;
 
 export const PrizeCell = styled(Cell)`
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 1.875rem;
 `;
 
 export const ButtonCell = styled(Cell)`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 30px;
-  padding: 40px 0;
+  gap: 1.875rem;
+  padding: 2.5rem 0;
   text-align: center;
   grid-column: 1 / span 2;
 `;
@@ -44,7 +44,7 @@ export const CheckboxSection = styled.label`
 `;
 
 export const ButtonWrapper = styled.div`
-  width: 500px;
+  width: 31.25rem;
   margin: 0 auto;
 `;
 

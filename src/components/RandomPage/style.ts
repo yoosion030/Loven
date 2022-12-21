@@ -5,8 +5,8 @@ export const RandomForm = styled.div`
   display: flex;
   height: 100%;
   background-color: #ffffff;
-  border-radius: 20px;
-  padding: 130px 0 120px;
+  border-radius: 1.25rem;
+  padding: 8.125rem 0 7.5rem;
 
   svg {
     position: absolute;
@@ -21,7 +21,7 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 500px;
+  width: 31.25rem;
   height: 100%;
   margin: 0 auto;
 `;
@@ -29,5 +29,5 @@ export const Form = styled.form`
 export const ConferrerSection = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 1.875rem;
 `;

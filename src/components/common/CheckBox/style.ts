@@ -4,7 +4,7 @@ export const Label = styled.label`
   display: inline-block;
   position: relative;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 1.375rem;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -18,8 +18,8 @@ export const Label = styled.label`
   .checkmark {
     display: block;
     position: relative;
-    height: 20px;
-    width: 20px;
+    height: 1.25rem;
+    width: 1.25rem;
     border: 3px solid #f98543;
     border-radius: 3px;
   }

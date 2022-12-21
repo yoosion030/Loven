@@ -12,7 +12,7 @@ export const TitleCell = styled.div`
 
 export const TitleSection = styled.div`
   display: flex;
-  gap: 30px;
+  gap: 1.875rem;
   flex-direction: column;
 `;
 

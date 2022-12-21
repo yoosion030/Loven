@@ -5,7 +5,7 @@ export const Preview = styled.div`
   bottom: 3rem;
   z-index: 5;
   right: 11rem;
-  height: 50px;
+  height: 3.125rem;
   display: flex;
   cursor: pointer;
 
@@ -23,15 +23,15 @@ export const Preview = styled.div`
 `;
 
 export const PreviewDesc = styled.div`
-  width: 150px;
+  width: 9.375rem;
   height: 100%;
   background-color: #ffffff;
-  border-bottom-left-radius: 50px;
-  border-top-left-radius: 50px;
+  border-bottom-left-radius: 3.125rem;
+  border-top-left-radius: 3.125rem;
   box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.25);
-  line-height: 50px;
+  line-height: 3.125rem;
   transform: translateX(30px);
-  padding-left: 20px;
+  padding-left: 1.25rem;
 `;
 
 export const Icon = styled.div`
@@ -40,9 +40,9 @@ export const Icon = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
+  width: 3.125rem;
   height: 100%;
   background-color: #000000;
-  border-radius: 25px;
+  border-radius: 1.563rem;
   box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.25);
 `;
