@@ -32,30 +32,66 @@ const DirectPage = () => {
           <S.ConferrerSection>
             <Input
               label="수여자"
-              register={register('conferrer', { required: true })}
+              register={register('conferrer', {
+                required: true,
+                maxLength: {
+                  value: 10,
+                  message: '최대 10글자 입력입니다.',
+                },
+              })}
+              maxLength={10}
               placeholder="주는 사람의 이름을 입력해주세요."
             />
             <Input
               label="소속"
-              register={register('conferrer_group', { required: true })}
+              register={register('conferrer_group', {
+                required: true,
+                maxLength: {
+                  value: 20,
+                  message: '최대 20글자 입력입니다.',
+                },
+              })}
+              maxLength={20}
               placeholder="소속을 입력해주세요."
             />
           </S.ConferrerSection>
           <Input
             label="수상자"
-            register={register('winner', { required: true })}
+            register={register('winner', {
+              required: true,
+              maxLength: {
+                value: 10,
+                message: '최대 10글자 입력입니다.',
+              },
+            })}
+            maxLength={10}
             placeholder="받는 사람의 이름을 입력해주세요."
           />
         </S.PersonCell>
         <S.PrizeCell>
           <Input
             label="상 이름"
-            register={register('prize', { required: true })}
+            register={register('prize', {
+              required: true,
+              maxLength: {
+                value: 10,
+                message: '최대 10글자 입력입니다.',
+              },
+            })}
+            maxLength={10}
             placeholder="상 이름을 입력해주세요."
           />
           <Textarea
             label="내용"
-            register={register('content', { required: true })}
+            register={register('content', {
+              required: true,
+              maxLength: {
+                value: 200,
+                message: '최대 10글자 입력입니다.',
+              },
+            })}
+            maxLength={150}
+            placeholder="150자 이내 내용을 입력해주세요."
           />
         </S.PrizeCell>
         <S.ButtonCell>
