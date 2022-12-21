@@ -25,7 +25,7 @@ const Prize: React.FC<PrizeProps> = ({
 
       <S.WinnerSection>
         <p>{prize}</p>
-        <p>{winner}</p>
+        <p className="winner"> {winner}</p>
       </S.WinnerSection>
       <S.ContentSection>{content}</S.ContentSection>
       <S.DateSection>

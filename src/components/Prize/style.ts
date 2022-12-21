@@ -16,7 +16,7 @@ export const Prize = styled.div`
 export const Title = styled.h1`
   text-align: center;
   font-size: 90px;
-  margin: 50px 0 120px;
+  margin: 50px 0 100px;
   p {
     display: inline-block;
     margin-right: 30px;
@@ -27,8 +27,16 @@ export const WinnerSection = styled.div`
   display: flex;
   font-size: 40px;
   justify-content: space-between;
-  height: 80px;
+  height: 100px;
   padding: 0 140px;
+  p {
+    width: 40%;
+  }
+
+  .winner {
+    width: 30%;
+    text-align: right;
+  }
 `;
 
 export const ContentSection = styled.div`
@@ -36,18 +44,20 @@ export const ContentSection = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 550px;
   line-height: 65px;
   padding: 0 120px;
 `;
 
 export const DateSection = styled.div`
   text-align: center;
-  margin-bottom: 40px;
+  margin: 20px 0;
 `;
 
 export const ConferrerSection = styled.div`
+  padding: 0 80px;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
+  text-align: center;
 `;
