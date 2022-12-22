@@ -1,5 +1,11 @@
+import * as S from './style';
+
 const BoardTitleCell = () => {
-  return <div></div>;
+  return (
+    <S.BoardTitleCell>
+      <h1>Bulletin Board</h1>
+    </S.BoardTitleCell>
+  );
 };
 
 export default BoardTitleCell;
