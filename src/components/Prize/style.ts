@@ -5,7 +5,6 @@ export const Prize = styled.div`
   width: 50rem;
   height: 100vh;
   background: #ffffff;
-  box-shadow: 2px 2px 6.25rem 10px rgba(0, 0, 0, 0.25);
   background-image: url('/background.png');
   background-repeat: no-repeat;
   background-size: cover;
