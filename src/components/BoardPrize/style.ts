@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import { HeaderItem } from 'components/cells/PrizeCell/style';
 
 export const BoardPrize = styled.div`
+  font-family: Noto Sans;
   display: flex;
   font-size: 22px;
   cursor: pointer;
