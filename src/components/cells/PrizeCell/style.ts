@@ -1,11 +1,13 @@
 import styled from '@emotion/styled';
 import { Cell } from 'shared/styles/board/cell';
 
-export const PrizeCell = styled(Cell)``;
+export const PrizeCell = styled(Cell)`
+  position: relative;
+`;
 
 export const BoardHeader = styled.div`
   display: flex;
-  margin-bottom: 55px;
+  margin: 55px 0;
 `;
 
 export const HeaderItem = styled.p`
@@ -23,4 +25,18 @@ export const HeaderItem = styled.p`
   :nth-of-type(4) {
     width: 400px;
   }
+`;
+
+export const Filter = styled.div`
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  right: 80px;
+`;
+
+export const FilterState = styled.div`
+  font-family: Noto Sans;
+  width: 60px;
+  text-align: end;
 `;

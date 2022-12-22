@@ -12,7 +12,9 @@ const BoardPage = () => {
     <S.Grid>
       <BoardTitleCell />
       <PrizeCell />
-      <I.BoardBackground />
+      <S.Background>
+        <I.BoardBackground />
+      </S.Background>
     </S.Grid>
   );
 };
