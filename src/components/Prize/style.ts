@@ -46,6 +46,7 @@ export const ContentSection = styled.div`
   height: 34.375rem;
   line-height: 4.063rem;
   padding: 0 7.5rem;
+  white-space: pre-line;
 `;
 
 export const DateSection = styled.div`
