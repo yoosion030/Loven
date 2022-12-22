@@ -2,8 +2,9 @@ import { BoardTitleCell, PrizeCell } from 'components';
 import * as S from './style';
 import * as I from 'assets/svg';
 import { useEffect } from 'react';
+import { PrizesProps } from 'types/Prize';
 
-const BoardPage = () => {
+const BoardPage: React.FC<PrizesProps> = ({ prizes }) => {
   useEffect(() => {
     console.log('상장 불러오기 api 요청');
   }, []);
@@ -11,7 +12,10 @@ const BoardPage = () => {
   return (
     <S.Grid>
       <BoardTitleCell />
-      <PrizeCell />
+      <PrizeCell
+        randomPrizes={prizes.randomPrizes}
+        directPrizes={prizes.directPrizes}
+      />
       <S.Background>
         <I.BoardBackground />
       </S.Background>
