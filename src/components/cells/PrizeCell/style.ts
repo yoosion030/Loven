@@ -13,6 +13,8 @@ export const BoardHeader = styled.div`
 `;
 
 export const HeaderItem = styled.p`
+  position: relative;
+  z-index: 2;
   font-weight: bold;
 
   :nth-of-type(1) {
