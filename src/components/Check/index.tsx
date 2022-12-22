@@ -15,6 +15,7 @@ const Check: React.FC<CheckProps> = ({ register }) => {
           id="student"
           name="winner_kind"
           type="radio"
+          value="student"
         />
         학생
       </S.Label>
@@ -25,6 +26,7 @@ const Check: React.FC<CheckProps> = ({ register }) => {
           id="teacher"
           name="winner_kind"
           type="radio"
+          value="teacher"
         />
         선생님
       </S.Label>

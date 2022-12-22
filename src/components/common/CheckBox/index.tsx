@@ -2,16 +2,15 @@ import * as S from './style';
 import type { UseFormRegisterReturn } from 'react-hook-form';
 
 interface CheckBoxProps {
-  id: string;
-  name: string;
   register: UseFormRegisterReturn;
   type: 'checkbox' | 'radio';
+  [x: string]: any;
 }
 
-const CheckBox: React.FC<CheckBoxProps> = ({ id, name, register, type }) => {
+const CheckBox: React.FC<CheckBoxProps> = ({ register, type, ...rest }) => {
   return (
     <S.Label>
-      <input {...register} type={type} name={name} id={id} value={id} />
+      <input {...register} {...rest} type={type} />
       <span className="checkmark" />
     </S.Label>
   );
