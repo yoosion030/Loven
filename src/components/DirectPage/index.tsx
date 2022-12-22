@@ -15,12 +15,14 @@ import axios from 'axios';
 
 const DirectPage = () => {
   const [preview, setPreview] = useState<boolean>(false);
-  const { handleSubmit, register, watch } = useForm<DirectType>();
+  const { handleSubmit, register, watch, setValue } = useForm<DirectType>();
 
   const onValid = async (data: DirectType) => {
     try {
-      const res = await axios.post('/direct/upload', data);
-      console.log(res);
+      const res = await axios.post('/direct/upload', {
+        ...data,
+        secret: !data.secret,
+      });
     } catch (e: any) {
       console.log(e);
     }
@@ -40,11 +42,11 @@ const DirectPage = () => {
               register={register('conferrer', {
                 required: true,
                 maxLength: {
-                  value: 10,
-                  message: '최대 10글자 입력입니다.',
+                  value: 4,
+                  message: '최대 4글자 입력입니다.',
                 },
               })}
-              maxLength={10}
+              maxLength={4}
               placeholder="주는 사람의 이름을 입력해주세요."
             />
             <Input
@@ -65,11 +67,11 @@ const DirectPage = () => {
             register={register('winner', {
               required: true,
               maxLength: {
-                value: 10,
-                message: '최대 10글자 입력입니다.',
+                value: 4,
+                message: '최대 4글자 입력입니다.',
               },
             })}
-            maxLength={10}
+            maxLength={4}
             placeholder="받는 사람의 이름을 입력해주세요."
           />
         </S.PersonCell>
@@ -103,10 +105,11 @@ const DirectPage = () => {
           <S.CheckboxSection htmlFor="secret">
             <p>상장 내용을 게시판에 공유할게요.</p>
             <CheckBox
-              id="secret"
-              name="secret"
               register={register('secret')}
               type="checkbox"
+              id="secret"
+              name="secret"
+              value={true}
             />
           </S.CheckboxSection>
           <S.ButtonWrapper>
