@@ -15,3 +15,7 @@ export interface PrizeType {
 export interface PrizesProps {
   prizes: PrizesType;
 }
+
+export interface PrizeProps {
+  prize: PrizeType;
+}
