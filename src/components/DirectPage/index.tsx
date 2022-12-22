@@ -11,14 +11,19 @@ import * as S from './style';
 import { useForm } from 'react-hook-form';
 import type { FieldErrors } from 'react-hook-form';
 import { useState } from 'react';
+import axios from 'axios';
 
 const DirectPage = () => {
   const [preview, setPreview] = useState<boolean>(false);
   const { handleSubmit, register, watch } = useForm<DirectType>();
 
-  const onValid = (data: DirectType) => {
-    console.log(data);
-    console.log('직접 입력 상장 생성 api ');
+  const onValid = async (data: DirectType) => {
+    try {
+      const res = await axios.post('/direct/upload', data);
+      console.log(res);
+    } catch (e: any) {
+      console.log(e);
+    }
   };
 
   const inValid = (errors: FieldErrors) => {

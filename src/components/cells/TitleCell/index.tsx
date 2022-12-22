@@ -9,11 +9,11 @@ const TitleCell = () => {
     <S.TitleCell>
       <S.TitleSection>
         <S.Title>
-          It is innovation <br />
-          that can be <br />
-          customized for listing.
+          <p>It is innovation</p>
+          <p>that can be </p>
+          <p>customized for listing.</p>
         </S.Title>
-        <C.Desc>세상에 없던 특별한 상장을 만듭니다.</C.Desc>
+        <C.Desc className="desc">세상에 없던 특별한 상장을 만듭니다.</C.Desc>
       </S.TitleSection>
       <Image src={business} alt="" width={526} />
     </S.TitleCell>
