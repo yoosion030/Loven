@@ -6,3 +6,4 @@ export { default as RandomBackground } from './RandomBackground';
 export { default as PreviewIcon } from './PreviewIcon';
 export { default as BoardBackground } from './BoardBackground';
 export { default as FilterIcon } from './FilterIcon';
+export { default as BackIcon } from './BackIcon';
