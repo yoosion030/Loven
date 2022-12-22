@@ -6,7 +6,7 @@ export const Prize = styled.div`
   height: 100vh;
   background: #ffffff;
   box-shadow: 2px 2px 6.25rem 10px rgba(0, 0, 0, 0.25);
-  background-image: url('background.png');
+  background-image: url('/background.png');
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 2.188rem;
@@ -16,7 +16,7 @@ export const Prize = styled.div`
 export const Title = styled.h1`
   text-align: center;
   font-size: 5.625rem;
-  margin: 3.125rem 0 6.25rem;
+  margin: 3rem 6.25rem;
   p {
     display: inline-block;
     margin-right: 1.875rem;
@@ -44,7 +44,7 @@ export const ContentSection = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 53.125rem;
+  height: 34.375rem;
   line-height: 4.063rem;
   padding: 0 7.5rem;
 `;
