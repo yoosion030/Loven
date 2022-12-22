@@ -3,6 +3,8 @@ import { Cell } from 'shared/styles/board/cell';
 
 export const PrizeCell = styled(Cell)`
   position: relative;
+  overflow: scroll;
+  height: auto;
 `;
 
 export const BoardHeader = styled.div`

@@ -10,6 +10,6 @@ export const Grid = styled.div`
 
 export const Background = styled.div`
   position: absolute;
-  bottom: 0;
+  bottom: -2px;
   left: 200px;
 `;
