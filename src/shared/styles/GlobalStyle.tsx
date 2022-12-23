@@ -7,9 +7,18 @@ export function GlobalStyle() {
       styles={css`
         ${emotionReset}
 
+        html {
+          font-size: 16px;
+          @media screen and (max-width: 1600px) {
+            font-size: 14px;
+          }
+          @media screen and (max-width: 640px) {
+            font-size: 12px;
+          }
+        }
+
         body {
           font-family: 'Archivo Black', 'Noto Sans KR', 'Song Myung', sans-serif;
-          font-size: 16px;
         }
 
         a {
