@@ -11,5 +11,5 @@ export const Grid = styled.div`
 export const Background = styled.div`
   position: absolute;
   bottom: -2px;
-  left: 200px;
+  left: 12.5em;
 `;

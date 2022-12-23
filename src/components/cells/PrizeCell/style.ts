@@ -9,7 +9,7 @@ export const PrizeCell = styled(Cell)`
 
 export const BoardHeader = styled.div`
   display: flex;
-  margin: 55px 0;
+  margin: 3.438rem 0;
 `;
 
 export const HeaderItem = styled.p`
@@ -18,16 +18,16 @@ export const HeaderItem = styled.p`
   font-weight: bold;
 
   :nth-of-type(1) {
-    width: 200px;
+    width: 12.5rem;
   }
   :nth-of-type(2) {
-    width: 200px;
+    width: 12.5rem;
   }
   :nth-of-type(3) {
-    width: 300px;
+    width: 18.75rem;
   }
   :nth-of-type(4) {
-    width: 400px;
+    width: 25rem;
   }
 `;
 
@@ -36,11 +36,11 @@ export const Filter = styled.div`
   align-items: center;
   cursor: pointer;
   position: absolute;
-  right: 80px;
+  right: 5rem;
 `;
 
 export const FilterState = styled.div`
   font-family: Noto Sans;
-  width: 60px;
+  width: 3.75rem;
   text-align: end;
 `;

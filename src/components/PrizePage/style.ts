@@ -20,8 +20,8 @@ export const PrizePage = styled.div`
 
 export const BackButton = styled.button`
   position: absolute;
-  left: 20px;
-  top: 20px;
+  left: 1.25rem;
+  top: 1.25rem;
   z-index: 5;
   background-color: #ffffff;
   border: none;
@@ -34,17 +34,17 @@ export const BackButton = styled.button`
 
 export const PrintButton = styled.button`
   position: absolute;
-  width: 246px;
+  width: 15.375rem;
   height: 3.75rem;
   background-color: #f98543;
   color: #ffffff;
   border: none;
-  border-radius: 100px;
+  border-radius: 6.25rem;
   font-size: 1.25rem;
   cursor: pointer;
   font-weight: 600;
-  left: 1700px;
-  top: 1002px;
+  left: 106.25rem;
+  top: 62.625rem;
 
   @media print {
     display: none;
