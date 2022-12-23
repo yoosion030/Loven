@@ -31,3 +31,16 @@ export const ConferrerSection = styled.div`
   flex-direction: column;
   gap: 1.875rem;
 `;
+
+export const PrizeWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #0000000e;
+  z-index: 7;
+`;

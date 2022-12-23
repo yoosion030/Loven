@@ -17,7 +17,7 @@ import { useRouter } from 'next/router';
 const DirectPage = () => {
   const { push } = useRouter();
   const [preview, setPreview] = useState<boolean>(false);
-  const { handleSubmit, register, watch, setValue } = useForm<DirectType>();
+  const { handleSubmit, register, watch } = useForm<DirectType>();
 
   const onValid = async (data: DirectType) => {
     try {
