@@ -26,6 +26,10 @@ export const BackButton = styled.button`
   background-color: #ffffff;
   border: none;
   cursor: pointer;
+
+  @media print {
+    display: none;
+  }
 `;
 
 export const PrintButton = styled.button`
