@@ -12,17 +12,20 @@ import { useForm } from 'react-hook-form';
 import type { FieldErrors } from 'react-hook-form';
 import { useState } from 'react';
 import axios from 'axios';
+import { useRouter } from 'next/router';
 
 const DirectPage = () => {
+  const { push } = useRouter();
   const [preview, setPreview] = useState<boolean>(false);
   const { handleSubmit, register, watch, setValue } = useForm<DirectType>();
 
   const onValid = async (data: DirectType) => {
     try {
-      const res = await axios.post('/direct/upload', {
+      const res = await axios.post('http://10.82.17.155:8000/direct/upload', {
         ...data,
         secret: !data.secret,
       });
+      push(`/direct/${res.data.id}`);
     } catch (e: any) {
       console.log(e);
     }
