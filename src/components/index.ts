@@ -22,3 +22,4 @@ export { default as RandomPage } from './RandomPage';
 export { default as DirectPage } from './DirectPage';
 export { default as BoardPage } from './BoardPage';
 export { default as PrizePage } from './PrizePage';
+export { default as NotFoundPage } from './NotFoundPage';
