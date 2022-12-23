@@ -41,7 +41,7 @@ export const ContentSection = styled.div`
   align-items: center;
   height: 34rem;
   line-height: 4.063rem;
-  padding: 0 7.5rem;
+  padding: 0 6.5rem;
   white-space: pre-line;
 `;
 

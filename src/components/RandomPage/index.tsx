@@ -21,9 +21,15 @@ const RandomPage = () => {
       <S.Form onSubmit={handleSubmit(onValid, inValid)}>
         <S.ConferrerSection>
           <Input
-            label="수여자"
-            register={register('conferrer', { required: true })}
-            placeholder="주는 사람의 이름을 입력해주세요."
+            label="수여자 (주는 사람)"
+            register={register('conferrer', {
+              required: true,
+              maxLength: {
+                value: 4,
+                message: '10자 이내로 입력해주세요.',
+              },
+            })}
+            placeholder="10자 이내로 입력해주세요."
           />
 
           <Input
@@ -36,8 +42,14 @@ const RandomPage = () => {
         <div>
           <Input
             label="수상자"
-            register={register('winner', { required: true })}
-            placeholder="받는 사람의 이름을 입력해주세요."
+            register={register('winner', {
+              required: true,
+              maxLength: {
+                value: 4,
+                message: '4자 이내로 입력해주세요.',
+              },
+            })}
+            placeholder="4자 이내로 입력해주세요."
           />
           <Check register={register('winner_kind', { required: true })} />
         </div>
