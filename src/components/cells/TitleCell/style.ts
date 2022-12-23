@@ -17,9 +17,11 @@ export const TitleSection = styled.div`
   p {
     opacity: 1;
   }
+
   @keyframes fourthFadeIn {
     90% {
       opacity: 0;
+      transform: translateY(10px);
     }
 
     from {
@@ -27,7 +29,7 @@ export const TitleSection = styled.div`
     }
   }
   .desc {
-    animation: fourthFadeIn 3s;
+    animation: fourthFadeIn 2s;
   }
 `;
 
@@ -39,6 +41,7 @@ export const Title = styled.h1`
   @keyframes firstFadeIn {
     30% {
       opacity: 0;
+      transform: translateY(10px);
     }
 
     from {
@@ -49,6 +52,7 @@ export const Title = styled.h1`
   @keyframes secondFadeIn {
     50% {
       opacity: 0;
+      transform: translateY(10px);
     }
 
     from {
@@ -59,6 +63,7 @@ export const Title = styled.h1`
   @keyframes thirdFadeIn {
     70% {
       opacity: 0;
+      transform: translateY(10px);
     }
 
     from {
@@ -68,13 +73,13 @@ export const Title = styled.h1`
 
   p {
     :nth-of-type(1) {
-      animation: firstFadeIn 3s;
+      animation: firstFadeIn 2s;
     }
     :nth-of-type(2) {
-      animation: secondFadeIn 3s;
+      animation: secondFadeIn 2s;
     }
     :nth-of-type(3) {
-      animation: thirdFadeIn 3s;
+      animation: thirdFadeIn 2s;
     }
   }
 `;
