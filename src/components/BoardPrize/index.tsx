@@ -13,8 +13,8 @@ const BoardPrize: React.FC<BoardPrizeProps> = ({ prize, filter }) => {
 
   return (
     <S.BoardPrize onClick={() => push(`${filter + '/' + prize.id}`)}>
-      <S.BoardPrizeItem>{prize.winner}</S.BoardPrizeItem>
       <S.BoardPrizeItem>{prize.conferrer}</S.BoardPrizeItem>
+      <S.BoardPrizeItem>{prize.winner}</S.BoardPrizeItem>
       <S.BoardPrizeItem>{prize.random?.prize ?? prize.prize}</S.BoardPrizeItem>
       <S.BoardPrizeItem>
         {prize.random?.content ?? prize.content}
