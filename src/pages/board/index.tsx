@@ -10,20 +10,9 @@ const index = (prizes: PrizesType) => {
 };
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  const randomPrizes: RandomPrizeType[] = [
-    {
-      id: 1,
-      conferrer: '양세련',
-      winner: '유시온',
-      random: {
-        prize: '츤데레상',
-        content: '위 사람은 평소 겉은 차가워 보이지만...',
-        winner_kind: 'student',
-      },
-      conferrer_group: '광주소프트웨어마이스터고등학교',
-      secret: false,
-    },
-  ];
+  const randomPrizes: RandomPrizeType[] = (
+    await axios.get('http://10.82.17.155:8000/random/board')
+  ).data;
 
   const directPrizes: DirectPrizeType[] = (
     await axios.get('http://10.82.17.155:8000/direct/board')

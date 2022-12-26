@@ -5,10 +5,21 @@ import { useForm } from 'react-hook-form';
 import type { FieldErrors } from 'react-hook-form';
 import { RandomType } from 'types/Random';
 import { useState } from 'react';
+import axios from 'axios';
+import { useRouter } from 'next/router';
 
 const RandomPage = () => {
-  const onValid = (data: RandomType) => {
-    console.log('random 상장 생성 api 전송');
+  const { push } = useRouter();
+
+  const onValid = async (data: RandomType) => {
+    try {
+      const res = await axios.post('http://10.82.17.155:8000/random/upload', {
+        ...data,
+      });
+      push(`/random/${res.data.id}`);
+    } catch (e: any) {
+      console.log(e);
+    }
   };
 
   const inValid = (errors: FieldErrors) => {

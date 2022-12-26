@@ -6,8 +6,8 @@ const MainPage: React.FC<CountProps> = ({ count }) => {
   return (
     <S.Grid>
       <TitleCell />
-      <RandomCell count={count.randomCount} />
-      <DirectCell count={count.DirectCount} />
+      <RandomCell count={count.random} />
+      <DirectCell count={count.direct} />
       <BoardCell />
     </S.Grid>
   );

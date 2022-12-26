@@ -1,6 +1,10 @@
 export interface CountType {
-  randomCount: number;
-  DirectCount: number;
+  random: number;
+  direct: number;
+}
+
+export interface CountDataType {
+  data: CountType;
 }
 
 export interface CountProps {

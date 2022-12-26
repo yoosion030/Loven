@@ -9,7 +9,7 @@ export interface RandomPrizeType {
   id: number;
   conferrer: string;
   winner: string;
-  random: {
+  form: {
     prize: string;
     content: string;
     winner_kind: 'student' | 'teacher';
