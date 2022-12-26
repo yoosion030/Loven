@@ -7,3 +7,4 @@ export { default as PreviewIcon } from './PreviewIcon';
 export { default as BoardBackground } from './BoardBackground';
 export { default as FilterIcon } from './FilterIcon';
 export { default as BackIcon } from './BackIcon';
+export { default as NotFoundIcon } from './NotFoundIcon';
