@@ -5,8 +5,29 @@ export const NotFoundPage = styled.div`
   height: 100%;
   border-radius: 1.25rem;
   background-color: #ffffff;
-  font-size: 8.125rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  gap: 20px;
+  z-index: 5;
+
+  svg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+`;
+
+export const Title = styled.h1`
+  color: #f98543;
+  font-size: 8.125rem;
+  -webkit-text-stroke: 5px #000000;
+`;
+
+export const Desc = styled.p`
+  line-height: 25px;
+  text-align: center;
 `;
