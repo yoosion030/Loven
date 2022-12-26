@@ -5,10 +5,10 @@ import * as I from 'assets/svg';
 import { useRouter } from 'next/router';
 
 const PrizePage: React.FC<PrizeProps> = ({ prize }) => {
-  const { back } = useRouter();
+  const { push } = useRouter();
   return (
     <>
-      <S.BackButton onClick={() => back()}>
+      <S.BackButton onClick={() => push('/board')}>
         <I.BackIcon />
       </S.BackButton>
       <S.PrizePage>
