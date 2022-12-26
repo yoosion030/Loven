@@ -1,8 +1,10 @@
 import * as S from './style';
 import { BoardPrize } from 'components';
-import { PrizesType, PrizeType } from 'types/Prize';
+import { PrizesType } from 'types/Prize';
 import * as I from 'assets/svg';
 import { useState } from 'react';
+import { RandomPrizeType } from 'types/Random';
+import { DirectPrizeType } from 'types/Direct';
 
 const PrizeCell: React.FC<PrizesType> = ({ randomPrizes, directPrizes }) => {
   const [filter, setFilter] = useState<'random' | 'direct'>('direct');
@@ -25,10 +27,10 @@ const PrizeCell: React.FC<PrizesType> = ({ randomPrizes, directPrizes }) => {
       </S.BoardHeader>
 
       {filter === 'direct'
-        ? directPrizes.map((prize: PrizeType) => (
+        ? directPrizes.map((prize: any) => (
             <BoardPrize prize={prize} key={prize.id} filter={filter} />
           ))
-        : randomPrizes.map((prize: PrizeType) => (
+        : randomPrizes.map((prize: any) => (
             <BoardPrize prize={prize} key={prize.id} filter={filter} />
           ))}
     </S.PrizeCell>

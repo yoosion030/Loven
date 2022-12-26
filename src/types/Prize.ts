@@ -1,6 +1,9 @@
+import { DirectPrizeType } from './Direct';
+import { RandomPrizeType } from './Random';
+
 export interface PrizesType {
-  randomPrizes: PrizeType[];
-  directPrizes: PrizeType[];
+  randomPrizes: RandomPrizeType[];
+  directPrizes: DirectPrizeType[];
 }
 
 export interface PrizeType {

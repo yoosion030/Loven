@@ -6,3 +6,7 @@ export interface DirectType {
   content: string; // 내용
   secret: boolean; // 비밀글 여부
 }
+
+export interface DirectPrizeType extends DirectType {
+  id: number;
+}
