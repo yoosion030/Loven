@@ -10,20 +10,29 @@ const index = (prizes: PrizesType) => {
 };
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  const randomPrizes: RandomPrizeType[] = (
-    await axios.get(`${process.env.BASE_URL}/random/board`)
-  ).data;
+  try {
+    const randomPrizes: RandomPrizeType[] = (
+      await axios.get(`${process.env.BASE_URL}/random/board`)
+    ).data;
 
-  const directPrizes: DirectPrizeType[] = await (
-    await axios.get(`${process.env.BASE_URL}/direct/board`)
-  ).data;
+    const directPrizes: DirectPrizeType[] = await (
+      await axios.get(`${process.env.BASE_URL}/direct/board`)
+    ).data;
 
-  return {
-    props: {
-      randomPrizes,
-      directPrizes,
-    },
-  };
+    return {
+      props: {
+        randomPrizes,
+        directPrizes,
+      },
+    };
+  } catch (e) {
+    return {
+      props: {
+        randomPrizes: [],
+        directPrizes: [],
+      },
+    };
+  }
 };
 
 export default index;

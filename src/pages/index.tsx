@@ -12,16 +12,25 @@ const Home: NextPage<CountType> = count => {
 };
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  const { data }: CountDataType = await axios.get(
-    `http://10.82.17.155:8001/prize/count`,
-  );
+  try {
+    const { data }: CountDataType = await axios.get(
+      `http://10.82.17.155:8001/prize/count`,
+    );
 
-  return {
-    props: {
-      random: data.random,
-      direct: data.direct,
-    },
-  };
+    return {
+      props: {
+        random: data.random,
+        direct: data.direct,
+      },
+    };
+  } catch (e) {
+    return {
+      props: {
+        random: 0,
+        direct: 0,
+      },
+    };
+  }
 };
 
 export default Home;
