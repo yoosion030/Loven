@@ -6,6 +6,7 @@ import { useRouter } from 'next/router';
 
 const PrizePage: React.FC<PrizeProps> = ({ prize }) => {
   const { push } = useRouter();
+
   return (
     <>
       <S.BackButton onClick={() => push('/board')}>
@@ -17,7 +18,7 @@ const PrizePage: React.FC<PrizeProps> = ({ prize }) => {
           winner={prize.winner}
           prize={prize.prize ?? prize.form.prize}
           conferrer_group={prize.conferrer_group}
-          content={prize.prize ?? prize.form.content}
+          content={prize.content ?? prize.form.content}
         />
       </S.PrizePage>
       <S.PrintButton onClick={() => window.print()}>인쇄하기</S.PrintButton>
