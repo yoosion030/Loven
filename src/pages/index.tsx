@@ -5,9 +5,6 @@ import { useEffect } from 'react';
 import axios from 'axios';
 
 const Home: NextPage<CountType> = count => {
-  useEffect(() => {
-    console.log('카운트 api 요청');
-  }, []);
   return <MainPage count={count} />;
 };
 
@@ -19,8 +16,8 @@ export const getServerSideProps: GetServerSideProps = async () => {
 
     return {
       props: {
-        random: data.random,
-        direct: data.direct,
+        random: data.random.toString().padStart(2, '0'),
+        direct: data.direct.toString().padStart(2, '0'),
       },
     };
   } catch (e) {

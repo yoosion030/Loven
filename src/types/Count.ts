@@ -1,6 +1,6 @@
 export interface CountType {
-  random: number;
-  direct: number;
+  random: string;
+  direct: string;
 }
 
 export interface CountDataType {
@@ -12,5 +12,5 @@ export interface CountProps {
 }
 
 export interface Count {
-  [key: string]: number;
+  [key: string]: string;
 }
