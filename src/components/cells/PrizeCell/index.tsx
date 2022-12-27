@@ -3,8 +3,6 @@ import { BoardPrize } from 'components';
 import { PrizesType } from 'types/Prize';
 import * as I from 'assets/svg';
 import { useState } from 'react';
-import { RandomPrizeType } from 'types/Random';
-import { DirectPrizeType } from 'types/Direct';
 
 const PrizeCell: React.FC<PrizesType> = ({ randomPrizes, directPrizes }) => {
   const [filter, setFilter] = useState<'random' | 'direct'>('direct');
