@@ -23,8 +23,8 @@ export const getServerSideProps: GetServerSideProps = async () => {
   } catch (e) {
     return {
       props: {
-        random: 0,
-        direct: 0,
+        random: '00',
+        direct: '00',
       },
     };
   }
