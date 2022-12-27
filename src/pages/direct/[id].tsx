@@ -8,15 +8,31 @@ const index: NextPage<PrizeProps> = ({ prize }) => {
 };
 
 export const getServerSideProps: GetServerSideProps = async ({ params }) => {
-  const prize: PrizeType = (
-    await axios.get(`${process.env.BASE_URL}/direct/detail/${params?.id}`)
-  ).data;
+  try {
+    const prize: PrizeType = (
+      await axios.get(`${process.env.BASE_URL}/direct/detail/${params?.id}`)
+    ).data;
 
-  return {
-    props: {
-      prize,
-    },
-  };
+    return {
+      props: {
+        prize,
+      },
+    };
+  } catch (e) {
+    const prize = {
+      conferrer: '',
+      winner: '',
+      prize: '',
+      conferrer_group: '',
+      content: '잘못된 요청입니다.',
+    };
+
+    return {
+      props: {
+        prize,
+      },
+    };
+  }
 };
 
 export default index;

@@ -14,7 +14,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
     await axios.get(`${process.env.BASE_URL}/random/board`)
   ).data;
 
-  const directPrizes: DirectPrizeType[] = (
+  const directPrizes: DirectPrizeType[] = await (
     await axios.get(`${process.env.BASE_URL}/direct/board`)
   ).data;
 

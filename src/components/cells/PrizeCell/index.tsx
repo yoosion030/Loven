@@ -27,10 +27,10 @@ const PrizeCell: React.FC<PrizesType> = ({ randomPrizes, directPrizes }) => {
       </S.BoardHeader>
 
       {filter === 'direct'
-        ? directPrizes.map((prize: any) => (
+        ? directPrizes?.map((prize: any) => (
             <BoardPrize prize={prize} key={prize.id} filter={filter} />
           ))
-        : randomPrizes.map((prize: any) => (
+        : randomPrizes?.map((prize: any) => (
             <BoardPrize prize={prize} key={prize.id} filter={filter} />
           ))}
     </S.PrizeCell>
