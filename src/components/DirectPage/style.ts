@@ -40,7 +40,7 @@ export const ButtonCell = styled(Cell)`
 export const CheckboxSection = styled.label`
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 0.625rem;
 `;
 
 export const ButtonWrapper = styled.div`

@@ -10,7 +10,7 @@ export const NotFoundPage = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
-  gap: 20px;
+  gap: 1.25rem;
   z-index: 5;
 
   svg {
@@ -28,6 +28,6 @@ export const Title = styled.h1`
 `;
 
 export const Desc = styled.p`
-  line-height: 25px;
+  line-height: 1.563rem;
   text-align: center;
 `;
