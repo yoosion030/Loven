@@ -20,5 +20,5 @@ export interface PrizesProps {
 }
 
 export interface PrizeProps {
-  prize: DirectPrizeType & RandomPrizeType;
+  prize: DirectPrizeType | RandomPrizeType;
 }
