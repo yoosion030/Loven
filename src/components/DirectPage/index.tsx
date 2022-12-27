@@ -21,7 +21,7 @@ const DirectPage = () => {
 
   const onValid = async (data: DirectType) => {
     try {
-      const res = await axios.post('http://10.82.17.155:8000/direct/upload', {
+      const res = await axios.post(`${process.env.BASE_URL}/direct/upload`, {
         ...data,
         secret: !data.secret,
       });

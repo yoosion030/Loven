@@ -9,7 +9,7 @@ const index: NextPage<PrizeProps> = ({ prize }) => {
 
 export const getServerSideProps: GetServerSideProps = async ({ params }) => {
   const prize: PrizeType = (
-    await axios.get(`http://10.82.17.155:8000/random/detail/${params?.id}`)
+    await axios.get(`${process.env.BASE_URL}/random/detail/${params?.id}`)
   ).data;
 
   return {

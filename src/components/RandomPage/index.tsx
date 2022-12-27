@@ -13,7 +13,7 @@ const RandomPage = () => {
 
   const onValid = async (data: RandomType) => {
     try {
-      const res = await axios.post('http://10.82.17.155:8000/random/upload', {
+      const res = await axios.post(`${process.env.BASE_URL}/random/upload`, {
         ...data,
       });
       push(`/random/${res.data.id}`);

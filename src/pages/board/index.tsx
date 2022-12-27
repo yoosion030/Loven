@@ -11,11 +11,11 @@ const index = (prizes: PrizesType) => {
 
 export const getServerSideProps: GetServerSideProps = async () => {
   const randomPrizes: RandomPrizeType[] = (
-    await axios.get('http://10.82.17.155:8000/random/board')
+    await axios.get(`${process.env.BASE_URL}/random/board`)
   ).data;
 
   const directPrizes: DirectPrizeType[] = (
-    await axios.get('http://10.82.17.155:8000/direct/board')
+    await axios.get(`${process.env.BASE_URL}/direct/board`)
   ).data;
 
   return {

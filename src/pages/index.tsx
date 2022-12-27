@@ -13,7 +13,7 @@ const Home: NextPage<CountType> = count => {
 
 export const getServerSideProps: GetServerSideProps = async () => {
   const { data }: CountDataType = await axios.get(
-    `http://10.82.17.155:8000/prize/count`,
+    `http://10.82.17.155:8001/prize/count`,
   );
 
   return {
