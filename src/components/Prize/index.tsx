@@ -16,7 +16,9 @@ const Prize: React.FC<PrizeProps> = ({
   prize,
 }) => {
   const date = new Date();
-
+  const year = date.getFullYear();
+  const month = (date.getMonth() + 1).toString().padStart(2, '0');
+  const dateNumber = date.getDate().toString().padStart(2, '0');
   return (
     <S.Prize onClick={e => e.stopPropagation()}>
       <S.Title>
@@ -29,7 +31,7 @@ const Prize: React.FC<PrizeProps> = ({
       </S.WinnerSection>
       <S.ContentSection>{content}</S.ContentSection>
       <S.DateSection>
-        {date.getFullYear()}년 {date.getMonth() + 1}월 {date.getDate()}일
+        {year}년 {month}월 {dateNumber}일
       </S.DateSection>
       <S.ConferrerSection>
         <p>{conferrer_group}</p>
