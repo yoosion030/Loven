@@ -10,7 +10,7 @@ interface CheckBoxProps {
 const CheckBox: React.FC<CheckBoxProps> = ({ register, type, ...rest }) => {
   return (
     <S.Label>
-      <input {...register} {...rest} type={type} />
+      <input {...register} {...rest} type={type} defaultChecked={true} />
       <span className="checkmark" />
     </S.Label>
   );
