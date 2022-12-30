@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 export const Prize = styled.div`
   font-family: 'Song Myung';
-  width: 50rem;
+  width: 51rem;
   height: 100vh;
   background: #ffffff;
   background-image: url('/background.png');
@@ -10,6 +10,12 @@ export const Prize = styled.div`
   background-size: cover;
   font-size: 2.188rem;
   background-position: center center;
+  border-left: 1px solid #f98543;
+  border-right: 1px solid #f98543;
+
+  @media print {
+    border: none;
+  }
 `;
 
 export const Title = styled.h1`
