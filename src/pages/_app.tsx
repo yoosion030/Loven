@@ -14,6 +14,10 @@ function MyApp({ Component, pageProps }: AppProps) {
     <main>
       <Head>
         <title>Loven</title>
+        <meta
+          name="google-site-verification"
+          content="wP0hduGgCyQtm7VRO927Vh5HLMo7wo1jSmg47PmE240"
+        />
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
