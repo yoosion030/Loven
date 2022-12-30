@@ -113,6 +113,7 @@ const DirectPage = () => {
               id="secret"
               name="secret"
               value={true}
+              defaultChecked={true}
             />
           </S.CheckboxSection>
           <S.ButtonWrapper>
