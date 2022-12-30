@@ -9,16 +9,25 @@ export function GlobalStyle() {
 
         html {
           font-size: 16px;
-          @media screen and (max-width: 1600px) {
-            font-size: 14px;
+          @media screen and (max-width: 1800px) {
+            font-size: 12px;
           }
           @media screen and (max-width: 640px) {
-            font-size: 12px;
+            font-size: 8px;
           }
         }
 
         body {
           font-family: 'Archivo Black', 'Noto Sans KR', 'Song Myung', sans-serif;
+        }
+
+        main {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          padding: 2rem 10vw;
         }
 
         a {
