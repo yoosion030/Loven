@@ -1,4 +1,4 @@
 User-agent: *
 
 
-https://loven.vercel.app/sitemap.xml
+Sitemap: https://loven.vercel.app/sitemap.xml
