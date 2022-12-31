@@ -9,9 +9,7 @@ export function GlobalStyle() {
 
         html {
           font-size: 16px;
-          @media screen and (max-width: 1800px) {
-            font-size: 12px;
-          }
+
           @media screen and (max-width: 640px) {
             font-size: 8px;
           }
@@ -25,9 +23,9 @@ export function GlobalStyle() {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          align-items: center;
+          justify-content: space-between;
           height: 100vh;
-          padding: 2rem 10vw;
+          padding: 2.8vh 10vw;
         }
 
         a {

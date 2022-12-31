@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const BoardTitle = styled.h1`
-  font-size: 5rem;
+  font-size: 7.2vh;
 `;
 
 export const BoardCell = styled.div`
@@ -13,9 +13,11 @@ export const BoardCell = styled.div`
   align-items: center;
 
   svg {
+    top: 12vh;
     position: absolute;
-    left: 40%;
-    top: 33%;
+    left: 23vh;
+    width: 20vh;
+    height: 7.3vh;
   }
 
   &:hover {

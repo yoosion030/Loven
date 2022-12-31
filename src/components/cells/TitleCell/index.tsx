@@ -15,7 +15,7 @@ const TitleCell = () => {
         </S.Title>
         <C.Desc className="desc">세상에 없던 특별한 상장을 만듭니다.</C.Desc>
       </S.TitleSection>
-      <Image src={business} alt="" width={526} />
+      <Image src={business} alt="" />
     </S.TitleCell>
   );
 };
