@@ -43,8 +43,8 @@ export const PrintButton = styled.button`
   font-size: 1.25rem;
   cursor: pointer;
   font-weight: 600;
-  left: 106.25rem;
-  top: 62.625rem;
+  right: 10vh;
+  top: 90vh;
 
   @media print {
     display: none;
