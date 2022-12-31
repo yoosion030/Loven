@@ -1,11 +1,5 @@
 const BoardIcon = () => (
-  <svg
-    width="231"
-    height="82"
-    viewBox="0 0 231 82"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
+  <svg viewBox="0 0 231 82" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
       fillRule="evenodd"
       clipRule="evenodd"
