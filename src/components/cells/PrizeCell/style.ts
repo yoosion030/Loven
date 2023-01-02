@@ -36,8 +36,8 @@ export const Filter = styled.div`
   display: flex;
   align-items: center;
   cursor: pointer;
-  position: absolute;
-  right: 5rem;
+  position: fixed;
+  right: 30vh;
 `;
 
 export const FilterState = styled.div`
