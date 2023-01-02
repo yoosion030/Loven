@@ -61,7 +61,7 @@ const RandomPage = () => {
           </S.ConferrerSection>
           <div>
             <Input
-              label="수상자"
+              label="수상자 (받는 사람)"
               register={register('winner', {
                 required: true,
                 maxLength: {
