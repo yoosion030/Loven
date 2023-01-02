@@ -13,11 +13,11 @@ export const getServerSideProps: GetServerSideProps = async () => {
   try {
     const randomPrizes: RandomPrizeType[] = (
       await axios.get(`${process.env.BASE_URL}/random/board`)
-    ).data;
+    ).data.reverse();
 
     const directPrizes: DirectPrizeType[] = await (
       await axios.get(`${process.env.BASE_URL}/direct/board`)
-    ).data;
+    ).data.reverse();
 
     return {
       props: {
