@@ -6,7 +6,7 @@ import { Logo, Layout } from 'components';
 function MyApp({ Component, pageProps }: AppProps) {
   const TEAM = '히죽팀';
   const URL = 'https://loven.vercel.app';
-  const OG_IMAGE = '';
+  const OG_IMAGE = 'https://loven.vercel.app/OGImage.png';
   const PROJECT_NAME = 'Loven';
   const DESC = '간단 상장 제작 서비스 Loven 입니다.';
 
